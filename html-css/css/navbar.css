@@ -11,10 +11,10 @@ html{
 body {
    font-family: roboto;
    height: 100vh;
-   background: linear-gradient(to top, rgba(0,0,0,0.1)50%, rgba(0,0,0,0.1)50%),  ;
+   background: linear-gradient(to top, rgba(0,0,0,0.1)50%, rgba(0,0,0,0.1)50%);
    background-size: cover;   
    background-position: center;
-   padding-top: 100px; /* igual à altura da navbar para que o conteudo nao fique atras da nav */
+   padding-top: 100px;
 }
 
 .nav-container{
@@ -34,12 +34,12 @@ body {
 nav{
    background: rgba(0,0,0,0.95);
    backdrop-filter: blur(10px);
-   padding: 10px 20px; /* tamanho da nav bar */
+   padding: 10px 20px;
    display: flex;
    justify-content: space-between;
    align-items: center;
    border-bottom: 1px solid rgba(255,255,255,0.1);
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* sombra abaixo da nav bar */
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links{
@@ -48,12 +48,10 @@ nav{
    gap: 60px;
    list-style: none;
    margin: center;
-
 }
 
-
 .nav-links a {
-   color: rgb(255, 255, 255);
+   color: rgb(243, 240, 240);
    text-decoration: none;
    font-size: 20px;
    position: relative;
@@ -61,13 +59,11 @@ nav{
    opacity: 0;
    transform: translateY(-10px);
    transition: all 0.3s ease 0.2s;
-  
 }
 
 .nav-container:hover .nav-links a {
    opacity: 1;
    transform:  translateY(0);
-
 }
 
 .nav-links a::after {
@@ -77,18 +73,17 @@ nav{
    left: 0;
    width: 0;
    height: 2px;
-   background: #f0a92d; 
+   background: #a14508; 
    transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-   color: #f0a92d;
+   color: #a14508;
 }
 
 .nav-links a:hover::after {
    width: 100%;
 }
-
 
 .logo {
    transform:  translateY(-10px);

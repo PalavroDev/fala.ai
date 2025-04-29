@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+  <div class="nav-container"> 
+    <nav>
+     <div class="logo">
+         <img src="imagens/logo.png" alt="logo">
+     </div>
+         <ul class="nav-links">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#">Sobre</a></li>
+             <li><a href="#">Contato</a></li>
+             <li><a href="login.html">Login/Cadastrar</a></li>
+         </ul>
+     </nav> 
+ </div>
+
+<div class="container-wrapper" id="containerWrapper">
+  <!-- Formulário de Login (frente) -->
+  <div class="container" id="loginContainer">
+    <div class="left-side">
+      <h1>Olá, bem-vindo!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nisi risus.</p>
+    </div>
+    <div class="right-side">
+      <form id="loginForm">
+        <input type="email" placeholder="Endereço de email" required>
+        <input type="password" placeholder="Senha" required>
+        <div class="options">
+          <label>
+            <input type="checkbox">
+            <font color= #ff6600> Lembrar de mim </font>
+          </label>
+          <a href="#" style="color: #ff6600">Esqueceu a senha?</a>
+        </div>
+        <button type="submit">Entrar</button>
+        <button type="button" id="showSignupBtn" style="background-color: transparent; color: #ff6600; border: 2px solid #ff6600;">Cadastrar</button>
+      </form>
+      <div class="social-login">
+        <p>Siga-nos:</p>
+        <a href="#">F</a>
+        <a href="#">T</a>
+        <a href="#">I</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulário de Cadastro (verso) -->
+  <div class="container signup" id="signupContainer">
+    <div class="left-side">
+      <h1>Crie sua conta!</h1>
+      <p>Junte-se à nossa comunidade hoje e aproveite todos os benefícios que oferecemos.</p>
+    </div>
+    <div class="right-side">
+      <form id="signupForm">
+        <input type="text" placeholder="Nome completo" required>
+        <input type="email" placeholder="Endereço de email" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirmar senha" required>
+        <button type="submit">Criar conta</button>
+        <button type="button" onclick="limparCampos()">Limpar</button>
+        <div class="back-to-login">
+          <a href="#" id="showLoginBtn">Já tem uma conta? Faça login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
