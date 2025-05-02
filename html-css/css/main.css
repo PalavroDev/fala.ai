@@ -119,6 +119,11 @@ nav{
   transition: transform 1s ease;
 }
 
+.container-wrapper.expandido {
+  width: 1000px;
+  height: 600px;
+}
+
 .container {
   background-color: #1a1a1a;
   width: 100%;
@@ -136,7 +141,7 @@ nav{
 }
 
 .left-side {
-  background-color: #ff6600;
+  background-color: #f0a92d;
   width: 50%;
   padding: 40px;
   display: flex;
@@ -191,7 +196,7 @@ nav{
 }
 
 .right-side button {
-  background-color: #ff6600;
+  background-color: #f0a92d;
   border: none;
   padding: 15px;
   border-radius: 5px;
@@ -202,7 +207,7 @@ nav{
 }
 
 .right-side button:hover {
-  background-color: #e65c00;
+  background-color: #f0a92d;
 }
 
 .social-login {
@@ -223,7 +228,13 @@ nav{
 }
 
 .back-to-login a {
-  color: #ff6600;
+  color: #f0a92d;
   text-decoration: none;
   font-size: 14px;
+}
+
+.buttom#cadastro{
+  background-color: transparent; 
+  color: #f0a92d; 
+  border: 2px solid #f0a92d;
 }

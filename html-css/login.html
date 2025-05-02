@@ -36,12 +36,12 @@
         <div class="options">
           <label>
             <input type="checkbox">
-            <font color= #ff6600> Lembrar de mim </font>
+            <font color= #f0a92d> Lembrar de mim </font>
           </label>
-          <a href="#" style="color: #ff6600">Esqueceu a senha?</a>
+          <a href="#" style="color:#f0a92d">Esqueceu a senha?</a>
         </div>
         <button type="submit">Entrar</button>
-        <button type="button" id="showSignupBtn" style="background-color: transparent; color: #ff6600; border: 2px solid #ff6600;">Cadastrar</button>
+        <button type="button" id="btCadastro">Cadastrar</button>
       </form>
       <div class="social-login">
         <p>Siga-nos:</p>
@@ -64,10 +64,17 @@
         <input type="email" placeholder="Endereço de email" required>
         <input type="password" placeholder="Senha" required>
         <input type="password" placeholder="Confirmar senha" required>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="4" multiple>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
         <button type="submit">Criar conta</button>
         <button type="button" onclick="limparCampos()">Limpar</button>
         <div class="back-to-login">
-          <a href="#" id="showLoginBtn">Já tem uma conta? Faça login</a>
+          <a href="#" id="btLogin">Já tem uma conta? Faça login</a>
         </div>
       </form>
     </div>
