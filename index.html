@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Fé Burger</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Fé Burger</title>
+    
 </head>
 <body>
     <div class="nav-container"> 
@@ -15,17 +17,55 @@
         </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="https://chat.whatsapp.com/G4rDsuICjOt00291r1Uru6">Contato</a></li>
                 <li><a href="login.html">Login/Cadastrar</a></li>
             </ul>
         </nav> 
     </div>
     
-    <h1>Automação para seu restaurante!</h1>
-    <br>
-    <p>Automatize o atendimento do seu delivery com o famoso robozinho para WhatsApp, trazendo até 50% mais faturamento para o seu negócio. Tenha cardápio digital, aplicativo para garçom, frente de caixa, gestão de estoque e todas as ferramentas que fazem da Anota AI o sistema mais completo do Brasil!</p>
+    <section class="principal" style="padding-top: 120px;">
+        <div class="texto-principal">
+            <h1>Automação para seu restaurante!</h1>
+            <p>Automatize o atendimento do seu delivery com o famoso robozinho para WhatsApp, trazendo até 50% mais faturamento para o seu negócio. Tenha cardápio digital, aplicativo para garçom, frente de caixa, gestão de estoque e todas as ferramentas que fazem da Anota AI o sistema mais completo do Brasil!</p>
+        </div>
+    </section>
 
+
+
+    <section class="sobre">
+        <div class="texto-sobre">
+          <h2>Fala AI</h2>
+          <p>Somos uma empresa focada em transformar a experiência de atendimento e gestão no setor gastronômico, unindo tecnologia, eficiência e praticidade. <br>
+            Nosso objetivo é simplificar processos, reduzir filas, aumentar a produtividade e proporcionar uma jornada mais fluida tanto para o cliente quanto para a equipe do restaurante. Com soluções que vão desde autoatendimento por voz e totens interativos até sistemas integrados de pedidos e gestão de cozinha, a falaAI traz inovação acessível e adaptável a qualquer porte de negócio.</p>
+        </div>
+        <div class="imagem-sobre">
+          <img src="imagens/sobre.jpg" alt="Fala AI" class="imagem-robo">
+        </div>
+    </section>
+
+
+    <section class="funcionalidades">
+        <h1>Anote menos, automatize mais. </h1> 
+        <br>
+        <h3>Com a falaAI, o seu restaurante opera com mais agilidade, precisão e inteligência. </h3>
+
+        <div class="beneficios">
+            <button class="bt-beneficios" onclick="mostrar-texto1">Comandas Digitais</button>
+            <button class="bt-beneficios" onclick="mostrar-texto2">Sistema PDV</button>
+            <button class="bt-beneficios" onclick="mostrar-texto3">Gestão de Cozinha</button>
+        </div>
+
+        <div class="text-box" id="texto"></div>
+
+    </section>
+
+    
+    
+    
+    
+    
+    
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>Página de Login</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="login">
 
   <div class="nav-container"> 
     <nav>
@@ -35,10 +35,10 @@
         <input type="password" placeholder="Senha" required>
         <div class="options">
           <label>
-            <input id="lembrar" type="checkbox">
+            <input type="checkbox">
             <font color= #f0a92d> Lembrar de mim </font>
           </label>
-          <a href="#" style="color:#f0a92d">Esqueceu a senha?</a>
+          <a href="#" class="link" style="color:#f0a92d">Esqueceu a senha?</a>
         </div>
         <button type="submit">Entrar</button>
         <button type="button" id="btCadastro">Cadastrar</button>
@@ -59,19 +59,23 @@
       <p>Junte-se à nossa comunidade hoje e aproveite todos os benefícios que oferecemos.</p>
     </div>
     <div class="right-side">
-      <form id="signupForm" method="post" autocomplete="on">
+      <form id="signupForm">
         <input type="text" placeholder="Nome completo*" required>
-        <input type="email" placeholder="Email*" required>
-        <input type="password" placeholder="Senha*" required>
-        <input type="password" placeholder="Confirmar senha*" required>
+        <input type="text" placeholder="Login*" maxlength="8" required >
+        <input type="email" placeholder="Endereço de email*" required>
+        <input type="tel" placeholder="Telefone*" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>
         <label id="sexo" for="sexo">
-          <select id="sexop" name="sexo" size="1" required>
-            <option value="" disabled selected>Sexo*</option> <!--- faz com que esta opção seja invalida, apenas para indicar que é sexo-->
+          <input type="number" placeholder="CEP*" required>
+          <select class="sexo" id="sexo" name="sexo" size="1" required>
+            <option value="opcao" disabled selected>Sexo*</option> 
             <option value="masculino">Masculino</option>
             <option value="feminino">Feminino</option>
             <option value="sem">Prefiro não dizer</option>
           </select>
         </label>
+        <input type="password" placeholder="Senha" required>
+        <input type="password" placeholder="Confirmar senha" required>
+
         <button type="submit">Criar conta</button>
         <button type="button" onclick="limparCampos()">Limpar</button>
         <div class="back-to-login">

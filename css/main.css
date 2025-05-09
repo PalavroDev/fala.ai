@@ -9,7 +9,28 @@ html{
 }
 
 
+h1,h2,h3,p{
+  color: white;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 body {
+  font-family: roboto;
+  background: linear-gradient(135deg, #000000, #333333);
+  background-size: cover;   
+  background-position: center;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+body.login {
   font-family: roboto;
   background: linear-gradient(135deg, #000000, #333333);
   background-size: cover;   
@@ -35,19 +56,6 @@ body {
   top: 0;
 }
 
-h1{
-  color: white;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-p {
-  color: white;
-}
 
 nav{
   background: rgba(0,0,0,0.95);
@@ -91,12 +99,12 @@ nav{
   left: 0;
   width: 0;
   height: 2px;
-  background: #a14508; 
+  background: #f0a92d; 
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #a14508;
+  color: #f0a92d;
 }
 
 .nav-links a:hover::after {
@@ -197,7 +205,11 @@ nav{
   font-size: 14px;
 }
 
-.right-side label {
+.right-side input::placeholder {
+  color: #ccc;
+}
+
+.sexo {
   background: #333;
   border: none;
   margin-bottom: 20px;
@@ -205,18 +217,6 @@ nav{
   border-radius: 5px;
   color: #ccc;
   font-size: 14px;
-}
-
-.right-side select {
-  background: #333;
-  border: none;
-  width: 300px;
-  color:  #ccc;
-  font-size: 14px;
-}
-
-.right-side input::placeholder {
-  color: #ccc;
 }
 
 .right-side .options {
@@ -240,6 +240,10 @@ nav{
 
 .right-side button:hover {
   background-color: #f0a92d;
+}
+
+.link{
+  text-decoration: none;
 }
 
 .social-login {
