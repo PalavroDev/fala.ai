@@ -1,0 +1,107 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body {
+   font-family: roboto;
+   height: 100vh;
+   background: linear-gradient(to top, rgba(0,0,0,0.1)50%, rgba(0,0,0,0.1)50%);
+   background-size: cover;   
+   background-position: center;
+   padding-top: 100px;
+}
+
+.nav-container{
+   position: fixed;
+   top: -30px;
+   left: 0;
+   width: 100%;
+   height: 100px;
+   z-index: 1000;
+   transition: top 0.3s ease;
+}
+
+.nav-container:hover{
+   top: 0;
+}
+
+nav{
+   background: rgba(0,0,0,0.95);
+   backdrop-filter: blur(10px);
+   padding: 10px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid rgba(255,255,255,0.1);
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links{
+   font-size: smaller;
+   display: flex;
+   gap: 60px;
+   list-style: none;
+   margin: center;
+}
+
+.nav-links a {
+   color: rgb(243, 240, 240);
+   text-decoration: none;
+   font-size: 20px;
+   position: relative;
+   transition: all 0.3s ease;
+   opacity: 0;
+   transform: translateY(-10px);
+   transition: all 0.3s ease 0.2s;
+}
+
+.nav-container:hover .nav-links a {
+   opacity: 1;
+   transform:  translateY(0);
+}
+
+.nav-links a::after {
+   content: '';
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background: #a14508; 
+   transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+   color: #a14508;
+}
+
+.nav-links a:hover::after {
+   width: 100%;
+}
+
+.logo {
+   transform:  translateY(-10px);
+   transition: all 0.3s ease 0.1s;
+   display: flex;
+   align-items: center;
+}
+
+.logo img {
+   height: 50px; 
+   width: auto;
+   display: block;
+   object-fit: contain;
+   transition: all 0.3s ease 0.1s;
+   filter: blur(2px) brightness(0.7);
+   margin-top: 15px; 
+}
+
+.nav-container:hover .logo img {
+   filter: blur(0) brightness(1); 
+}
