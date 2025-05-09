@@ -11,8 +11,9 @@
   
       // Seleciona todos os campos do formulário e limpa os valores
     function limparCampos() {
-      document.getElementById("signup Form").reset();
+      document.getElementById("formCadastro").reset();
   }
+
 
   function mostrarTexto(botao) {
     const texto = document.getElementById("texto");
@@ -25,3 +26,5 @@
       texto.innerText = "Tela na cozinha que exibe os pedidos em tempo real. Elimina o uso de papéis e melhora a organização do preparo.";
     }
   }
+
+  

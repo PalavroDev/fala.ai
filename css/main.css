@@ -141,11 +141,6 @@ nav{
   transition: transform 1s ease;
 }
 
-.container-wrapper.expandido {
-  width: 1000px;
-  height: 600px;
-}
-
 .container {
   background-color: #1a1a1a;
   width: 100%;
@@ -209,6 +204,33 @@ nav{
   color: #ccc;
 }
 
+
+#cadastro{
+  padding-top: 120px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+/* Estilização do scroll */
+#cadastro::-webkit-scrollbar {
+  width: 10px;
+}
+
+#cadastro::-webkit-scrollbar-track {
+  background: #414141;
+  border-radius: 5px;
+}
+
+#cadastro::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+#cadastro::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*label dos sexos*/
 .sexo {
   background: #333;
   border: none;
@@ -219,6 +241,7 @@ nav{
   font-size: 14px;
 }
 
+/* CONTAINER DA DIREITA (LOGIN/CADASTRO) */
 .right-side .options {
   display: flex;
   justify-content: space-between;
@@ -258,12 +281,12 @@ nav{
   font-size: 18px;
 }
 
-.back-to-login {
+.voltarLogin {
   text-align: center;
   margin-top: 15px;
 }
 
-.back-to-login a {
+.voltarLogin a {
   color: #f0a92d;
   text-decoration: none;
   font-size: 14px;

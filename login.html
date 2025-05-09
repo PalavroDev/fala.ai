@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página de Login</title>
+  <title>Login</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="login">
@@ -58,8 +58,8 @@
       <h1>Crie sua conta!</h1>
       <p>Junte-se à nossa comunidade hoje e aproveite todos os benefícios que oferecemos.</p>
     </div>
-    <div class="right-side">
-      <form id="signupForm">
+    <div class="right-side" id="cadastro">
+      <form id="formCadastro">
         <input type="text" placeholder="Nome completo*" required>
         <input type="text" placeholder="Login*" maxlength="8" required >
         <input type="email" placeholder="Endereço de email*" required>
@@ -73,12 +73,12 @@
             <option value="sem">Prefiro não dizer</option>
           </select>
         </label>
-        <input type="password" placeholder="Senha" required>
-        <input type="password" placeholder="Confirmar senha" required>
+        <input type="password" placeholder="Senha*" required>
+        <input type="password" placeholder="Confirmar senha*" required>
 
         <button type="submit">Criar conta</button>
         <button type="button" onclick="limparCampos()">Limpar</button>
-        <div class="back-to-login">
+        <div class="voltarLogin">
           <a href="#" id="btLogin">Já tem uma conta? Faça login</a>
         </div>
       </form>
