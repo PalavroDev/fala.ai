@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.1">
     <script src="js/script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/main.css">
@@ -11,7 +11,6 @@
     
 </head>
 <body>
-<section class="margem">
     <div class="nav-container"> 
        <nav>
         <div class="logo">
@@ -26,53 +25,103 @@
         </nav> 
     </div>
     
-    <section class="principal" style="padding-top: 120px;">
-        <div class="texto-principal">
-            <h1>Automação para seu restaurante!</h1>
-            <p> <img src="imagens/arrow.svg" alt="arrow">Cárdapio Digital</p>
-            <p> <img src="imagens/arrow.svg" alt="arrow">Aplicativo de Garçom</p>
-            <p> <img src="imagens/arrow.svg" alt="arrow">Gestão de Estoque</p>
-            <p> <img src="imagens/arrow.svg" alt="arrow">Gestão de Cozinha</p>
-            <p> <img src="imagens/arrow.svg" alt="arrow">Sistema PDV</p>
-            <button class="consulta"> <a href="https://wa.me/5521964828109"> Fale com um Consultor </a></button>
+    <section class="painel">
+        
+        <div class="logo-principal">
+            <img class="logo-principal" src="imagens/logo.svg" alt="">
         </div>
+
+        <section class="principal">
+
+        <div class="texto-principal">
+            <h1> Automação para seu restaurante! </h1>
+             <ul>   
+                <li class="beneficio"> <img src="imagens/arrow.svg" alt="arrow" class="arrow">Cárdapio Digital</li>
+                <li class="beneficio"> <img src="imagens/arrow.svg" alt="arrow" class="arrow">Aplicativo de Garçom</li>
+                <li class="beneficio"> <img src="imagens/arrow.svg" alt="arrow" class="arrow">Gestão de Estoque</li>
+                <li class="beneficio"> <img src="imagens/arrow.svg" alt="arrow" class="arrow">Gestão de Cozinha</li>
+                <li class="beneficio"> <img src="imagens/arrow.svg" alt="arrow" class="arrow">Sistema PDV</li>
+             </ul>   
+            <a class="consulta" href="https://wa.me/5521964828109">Fale com um Consultor</a>
+        </div>
+        
+        <div class="imagem-principal">
+            <img class="imagem-direita" src="imagens/imagens-direita.png" alt="prints">
+        </div>
+        
+        </section> 
     </section>
 
 
 
-    <section class="sobre">
+    <section class="margem">
+        <h4>Nosso objetivo</h4>
+      <div class="sobre">
         <div class="texto-sobre">        
-          <h2>Nosso objetivo</h2>
-          <p>Somos uma empresa focada em transformar a experiência de atendimento e gestão no setor gastronômico, unindo tecnologia, eficiência e praticidade. <br>
-            Nosso objetivo é simplificar processos, reduzir filas, aumentar a produtividade e proporcionar uma jornada mais fluida tanto para o cliente quanto para a equipe do restaurante. Com soluções que vão desde autoatendimento por voz e totens interativos até sistemas integrados de pedidos e gestão de cozinha, a falaAI traz inovação acessível e adaptável a qualquer porte de negócio.</p>
+          <p class="robo">Somos uma empresa focada em transformar a experiência de atendimento e gestão no setor gastronômico, unindo tecnologia, eficiência e praticidade. </p>
+          <p class="robo">Nosso objetivo é simplificar processos, reduzir filas, aumentar a produtividade e proporcionar uma jornada mais fluida tanto para o cliente quanto para a sua equipe.</p>
         </div>
         <div class="imagem-sobre">
           <img src="imagens/sobre.png" alt="sobreIMG" class="imagem-robo">
         </div>
+      </div>
     </section>
 
 
-    <section class="funcionalidades">
-        <h1>Anote menos, automatize mais. </h1> 
-        <br>
-        <h3>Com a falaAI, o seu restaurante opera com mais agilidade, precisão e inteligência. </h3>
+    <section class="margem">
+        <h2>Benefícios</h2>
+            <div class="grid-projetos">
 
-        <div class="beneficios">
-            <button class="bt-beneficios" onclick="mostrar-texto1">Comandas Digitais</button>
-            <button class="bt-beneficios" onclick="mostrar-texto2">Sistema PDV</button>
-            <button class="bt-beneficios" onclick="mostrar-texto3">Gestão de Cozinha</button>
-        </div>
+                <article class="projeto-card">
+                    <img src="imagens/icon.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Gestão de Mesas, Comandas e Estoque</p>
+                    </div>
+                </article>
+                
 
-        <div class="text-box" id="texto"></div>
+                <article class="projeto-card">
+                    <img src="imagens/icon2.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Cardápio e Comanda Digital </p>
+                    </div>
+                </article>
+                
 
-    </section>
+                <article class="projeto-card">
+                    <img src="imagens/icon3.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Emissão de nota fiscal eletrônica</p>  
+                    </div>
+                </article>
 
-    
-    
-    
-    
-    
-</section>  
+
+                <article class="projeto-card">
+                    <img src="imagens/icon4.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Automação para Whatsapp</p>
+                    </div>
+                </article>
+
+                
+                <article class="projeto-card">
+                    <img src="imagens/icon5.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Painel de gestão financeira</p>
+                    </div>
+                </article>
+
+                
+                <article class="projeto-card">
+                    <img src="imagens/icon6.png" alt="Projeto 3" >
+                    <div class="projeto-info">
+                        <p>Sistema de Ponto de Venda (PDV)</p>
+                    </div>
+                </article>
+            </div>
+    </section>    
+
+
 
 </body>
 </html>
