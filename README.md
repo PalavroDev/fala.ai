@@ -1,1 +1,1 @@
-Site para automação de restaurantes, com tela de login/cadastro, telas de erro
+Site de automação para restaurantes, feito em parceria com Conan Ribeiro.
