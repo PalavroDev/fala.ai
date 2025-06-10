@@ -1,13 +1,14 @@
-    // Ao clicar o container roda
-    document.getElementById('btCadastro').addEventListener('click', function() {
-      document.getElementById('containerWrapper').style.transform = 'rotateY(180deg)';
-    });
-      // Ao clicar o container roda
-    document.getElementById('btLogin').addEventListener('click', function(e) {
-      e.preventDefault();
-      document.getElementById('containerWrapper').style.transform = 'rotateY(0deg)';
-    });
-  
+const registerButton = document.getElementById("register");
+const loginButton = document.getElementById("login");
+const container = document.getElementById("container");
+
+registerButton.addEventListener("click", () => {
+  container.classList.add("right-panel-active");
+});
+
+loginButton.addEventListener("click", () => {
+  container.classList.remove("right-panel-active");
+});
   
       // Seleciona todos os campos do formulário e limpa os valores
     function limparCampos() {
@@ -27,7 +28,7 @@
     }
   }
 
-    //Script para a validação do CEP
+       
     function limpa_formulário_cep() {
             //Limpa valores do formulário de cep.
             document.getElementById('rua').value=("");
@@ -95,4 +96,18 @@
             limpa_formulário_cep();
         }
     };
+
+//DARK MODE
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("darkModeToggle");
+
+  toggle.addEventListener("click", function () {
+    document.body.classList.toggle("light-mode");
+
+    toggle.textContent = document.body.classList.contains("light-mode")
+      ? "🌑 Modo Escuro"
+      : "🌙 Modo Claro";
+  });
+});
+
     
