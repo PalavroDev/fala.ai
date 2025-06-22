@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.1">
-<link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
-  <link rel="stylesheet" href="css/login.css">
-  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
-  <title>Login</title>
-
-</head>
-<body>
- 
-
-    <div class="nav-container"> 
-       <nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.1" />
+    <link
+      href="https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
         <div class="logo">
-            <img src="imagens/logo.svg" alt="logo">
+          <img src="imagens/logo.svg" alt="logo" />
         </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="https://chat.whatsapp.com/G4rDsuICjOt00291r1Uru6">Contato</a></li>
-                <li><a href="login.html">Login/Cadastrar</a></li>
-            </ul>
-        </nav> 
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li>
+            <a href="https://chat.whatsapp.com/G4rDsuICjOt00291r1Uru6"
+              >Contato</a
+            >
+          </li>
+          <li><a href="login.html">Login/Cadastrar</a></li>
+        </ul>
+      </nav>
     </div>
+    <div class="login-box">
+      <div class="login-header">
+        <header>Login</header>
+      </div>
 
-<div class="container" id="container">
+      <form onsubmit="return fazerLogin()">
+        <div class="input-box">
+          <input
+            type="text"
+            class="input-field"
+            id="login"
+            placeholder="Login"
+            autocomplete="off"
+            required
+          />
+        </div>
 
-    <div class="form-container register-container" id="cadastro">
-      <form  method="get"  action="#">
-        <h1>Se cadastre.</h1>
-        <input type="text" placeholder="Nome completo*" required>
-        <input type="text" placeholder="Login*" maxlength="8" required >
-        <input type="email" placeholder="Email*" required>
-        <input type="tel" placeholder="Telefone*" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>    
-        <input type="password" placeholder="Password*" required>
-        
+        <div class="input-box">
+          <input
+            type="password"
+            class="input-field"
+            id="senha"
+            placeholder="Senha"
+            autocomplete="off"
+            required
+          />
+        </div>
 
+        <div class="forgot">
+          <section>
+            <input type="checkbox" id="check" />
+            <label for="check">Lembrar-me</label>
+          </section>
+          <section>
+            <a href="#">Esqueceu a senha?</a>
+          </section>
+        </div>
 
-
-        <button>Cadastrar</button>
-        <span>Siga-nos</span>
-        <div class="social-container">
-          <a href="#" class="social"> <img src="imagens/whatsapp.png" alt="zap"> </a>
-          <a href="#" class="social"> <img src="imagens/facebook-circle.png" alt="face"> </a>
-          <a href="#" class="social"> <img src="imagens/instagram.png" alt="insta"> </a>
+        <div class="input-submit">
+          <button type="submit" class="submit-btn">Logar</button>
         </div>
       </form>
-    </div>
 
-    <div class="form-container login-container">
-      <form  method="get"  action="#">
-        <h1>Login</h1>
+      <div id="erroGlobal" style="color: red; margin-top: 10px"></div>
 
-        <input type="text" placeholder="Login*" maxlength="8" required > 
-        <input type="password" placeholder="Senha" required>
-
-        <div class="content">
-          <div class="checkbox">
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label>Lembre-me</label>
-          </div>
-          <div class="pass-link">
-            <a href="#">Esqueceu sua senha?</a>
-          </div>
-        </div>
-        <button>Login</button>
-        <span>Siga-nos</span>
-        <div class="social-container">
-          <a href="#" class="social"> <img src="imagens/whatsapp.png" alt="zap"> </a>
-          <a href="#" class="social"> <img src="imagens/facebook-circle.png" alt="face"> </a>
-          <a href="#" class="social"> <img src="imagens/instagram.png" alt="insta"> </a>
-        </div>
-      </form>
-    </div>
-
-    <div class="overlay-container">
-      <div class="overlay">
-        <div class="overlay-panel overlay-left">
-          <h1 class="title">Olá <br> Bem-Vindo</h1>
-          <p>se você já tem um login, entre na sua conta</p>
-          <button class="ghost" id="login">Login
-            <i class="lni lni-arrow-left login"></i>
-          </button>
-        </div>
-        <div class="overlay-panel overlay-right">
-          <h1 class="title">Comece sua <br> Jornada agora</h1>
-          <p>se você não pussiu uma conta, entre nesta jornada conosco.</p>
-          <button class="ghost" id="register">Registrar
-            <i class="lni lni-arrow-right register"></i>
-          </button>
-        </div>
+      <div class="sign-up-link">
+        <p>Não possui uma conta? <a href="register.html">Cadastre-se</a></p>
       </div>
     </div>
 
-  </div>
+    <script src="js/script.js"></script>
+    <script>
+      // Verificar estado de login ao carregar cada página
+      document.addEventListener("DOMContentLoaded", function () {
+        // Verificar se o script de atualização de navbar existe
+        if (typeof atualizarNavbar === "function") {
+          atualizarNavbar();
+        }
 
-<script src="js/script.js"></script>
-
-</body>
+        // Se estiver em página restrita e não logado, redirecionar
+        const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+        if (window.location.pathname.includes("restrito") && !usuarioLogado) {
+          window.location.href = "login.html";
+        }
+      });
+    </script>
+  </body>
 </html>
