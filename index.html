@@ -7,28 +7,27 @@
     rel="stylesheet"
   />
   <link rel="stylesheet" href="css/main.css" />
-  <link rel="icon" href="imagens/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="imagens/favicon.ico.ico" type="image/x-icon" />
   <head>
     <title>Fala AI - Automação para seu negócio</title>
   </head>
   <body>
-    <div class="nav-container">
-      <nav>
-        <div class="logo">
-          <img src="imagens/logo.svg" alt="logo" />
-        </div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li>
-            <a href="https://chat.whatsapp.com/G4rDsuICjOt00291r1Uru6"
-              >Contato</a
-            >
-          </li>
-          <li><a href="login.html">Login/Cadastrar</a></li>
-        </ul>
-      </nav>
+<div class="nav-container">
+  <nav>
+    <div class="logo">
+      <img src="imagens/logo.svg" alt="logo" />
     </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="https://chat.whatsapp.com/G4rDsuICjOt00291r1Uru6">Contato</a></li>
+      <li>
+        <!-- Área que será preenchida com o nome do usuário ou os botões de Login/Cadastrar -->
+        <div class="user-actions"></div>
+      </li>
+    </ul>
+  </nav>
+</div>
 
     <section class="painel">
       <div class="logo-principal">
@@ -197,6 +196,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
     <script>
       // Verificar estado de login ao carregar cada página
       document.addEventListener("DOMContentLoaded", function () {
@@ -212,5 +212,12 @@
         }
       });
     </script>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    if (typeof atualizarHeader === "function") {
+      atualizarHeader();
+    }
+  });
+</script>
   </body>
 </html>

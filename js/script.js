@@ -275,3 +275,4 @@ console.log("Usuário cadastrado e logado com sucesso");
 // Atualize a navbar antes de redirecionar
 atualizarNavbar();
 window.location.href = "index.html";
+

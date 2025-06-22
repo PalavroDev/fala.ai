@@ -103,6 +103,73 @@ nav {
   filter: blur(0) brightness(1);
 }
 
+/* -------- USER ACTIONS (login/logout) -------- */
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease 0.2s, transform 0.3s ease 0.2s;
+}
+
+.nav-container:hover .user-actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.user-actions a,
+.user-actions button {
+  background-color: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.user-actions a:hover,
+.user-actions button:hover {
+  background-color: #ffffff22;
+  color: #f0a92d;
+}
+
+
+.user-actions .user-name {
+  color: white;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  margin-right: 0.3rem;
+  white-space: nowrap;
+}
+
+.user-actions .user-name:hover {
+  color: #f0a92d;
+}
+
+.user-actions .btn-logout {
+  background-color: #1f1e1e;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s;
+}
+
+.user-actions .btn-logout:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+
 .logo {
   transform: translateY(-0.52vw); /* 10px */
   transition: all 0.3s ease 0.1s;
@@ -247,7 +314,3 @@ section a {
   text-decoration: underline;
 }
 
-#userArea {
-  display: flex;
-  align-items: center;
-}
