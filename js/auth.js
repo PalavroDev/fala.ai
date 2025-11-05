@@ -63,8 +63,8 @@ function atualizarHeader() {
     `;
   } else {
     userActions.innerHTML = `
-      <a href="login.html" class="btn-login">Entrar</a>
-      <a href="register.html" class="btn-register">Cadastrar</a>
+      <a href="login.php" class="btn-login">Entrar</a>
+      <a href="register.php" class="btn-register">Cadastrar</a>
     `;
   }
 }

@@ -44,6 +44,6 @@ function atualizarNavbar() {
       <button onclick="logout()" class="logout-btn">Sair</button>
     `;
   } else {
-    userArea.innerHTML = '<a href="login.html">Login/Cadastrar</a>';
+    userArea.innerHTML = '<a href="login.php">Login/Cadastrar</a>';
   }
 }
